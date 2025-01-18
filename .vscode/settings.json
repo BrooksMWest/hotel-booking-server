@@ -1,0 +1,11 @@
+{
+    "pylint.args"	: [
+        "--load-plugins=pylint_django",
+        "--django-settings-module=tunapiano.settings",
+    ],
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+}

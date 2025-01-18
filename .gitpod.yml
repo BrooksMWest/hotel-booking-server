@@ -1,0 +1,6 @@
+
+tasks:
+  - init: pipenv install
+
+
+
