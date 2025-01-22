@@ -3,10 +3,10 @@ from hotelapi.models.booking import Booking
 
 class Room(models.Model):
 
-  room_number = models.CharField()
+  room_number = models.IntegerField()
   vacancy = models.BooleanField()
-  room_size = models.CharField(max_length=25)
-  star_rating = models.CharField(max_length=5)
+  room_size = models.IntegerField(max_length=5)
+  star_rating = models.IntegerField(max_length=5)
   price = models.CharField(max_length=10)
   good_view = models.BooleanField()
   smoking = models.BooleanField()
