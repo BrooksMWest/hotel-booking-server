@@ -1,7 +1,7 @@
 {
     "pylint.args"	: [
         "--load-plugins=pylint_django",
-        "--django-settings-module=tunapiano.settings",
+        "--django-settings-module=hotel.settings",
     ],
     "python.testing.pytestArgs": [
         "."
