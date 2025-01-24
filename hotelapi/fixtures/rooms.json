@@ -9,7 +9,8 @@
           "star_rating": 4,
           "price": "39.99",
           "good_view": true,
-          "smoking": false
+          "smoking": false,
+          "booking": 2
       }
   },
   {
@@ -22,7 +23,8 @@
           "star_rating": 3,
           "price": "599.99",
           "good_view": true,
-          "smoking": false
+          "smoking": false,
+          "booking": 2
       }
   },
   {
@@ -35,7 +37,8 @@
           "star_rating": "2",
           "price": "345.99",
           "good_view": false,
-          "smoking": true
+          "smoking": true,
+          "booking": 1
       }
     
 }

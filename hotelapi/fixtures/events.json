@@ -1,0 +1,20 @@
+[
+  {
+      "model": "hotelapi.event",
+      "pk": 1,
+      "fields": {
+          "event_name": "Wedding Party",
+          "date": "2025-05-20T00:00:00Z",
+          "time": "14:00:00"
+      }
+  },
+  {
+      "model": "hotelapi.event",
+      "pk": 2,
+      "fields": {
+          "event_name": "Corporate Retreat",
+          "date": "2025-06-15T00:00:00Z",
+          "time": "10:00:00"
+      }
+  }
+]
