@@ -1,0 +1,45 @@
+[
+  {
+      "model": "hotelapi.room",
+      "pk": 1,
+      "fields": {
+          "room_number": 1,
+          "vacancy": true,
+          "room_size": "Single",
+          "star_rating": 4,
+          "price": "39.99",
+          "good_view": true,
+          "smoking": false,
+          "booking": 2
+      }
+  },
+  {
+      "model": "hotelapi.room",
+      "pk": 2,
+      "fields": {
+          "room_number": 2,
+          "vacancy": false,
+          "room_size": "Suite",
+          "star_rating": 3,
+          "price": "599.99",
+          "good_view": true,
+          "smoking": false,
+          "booking": 2
+      }
+  },
+  {
+    "model": "hotelapi.room",
+    "pk": 3,
+    "fields": {
+          "room_number": 3,
+          "vacancy": true,
+          "room_size": "Two Queens",
+          "star_rating": "2",
+          "price": "345.99",
+          "good_view": false,
+          "smoking": true,
+          "booking": 1
+      }
+    
+}
+]
