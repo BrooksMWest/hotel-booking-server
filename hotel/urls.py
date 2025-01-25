@@ -3,6 +3,7 @@ from rest_framework import routers
 from hotelapi.views import RoomView
 from hotelapi.views import EventView
 from hotelapi.views import BookingView
+from hotelapi.views import CustomerView
 from hotelapi.views import CustomerBookingView
 from django.urls import path
 from django.contrib import admin
@@ -36,9 +37,10 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'bookings', BookingView, 'booking')
 router.register(r'events', EventView, 'event')
 router.register(r'rooms', RoomView, 'room')
+router.register(r'customers', CustomerView, 'customer')
 router.register(r'customer_bookings', CustomerBookingView, 'customer_booking')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('', include(router.urls))
 ]
