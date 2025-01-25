@@ -1,3 +1,14 @@
+from django.conf.urls import include
+from rest_framework import routers
+from hotelapi.views import RoomView
+from hotelapi.views import EventView
+from hotelapi.views import BookingView
+from hotelapi.views import CustomerBookingView
+from django.urls import path
+from django.contrib import admin
+from django.contrib import admin
+from django.urls import path
+
 """hotel URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,6 +26,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'bookings', BookingView, 'booking')
+router.register(r'events', EventView, 'event')
+router.register(r'rooms', RoomView, 'room')
+router.register(r'customer_bookings', CustomerBookingView, 'customer_booking')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
