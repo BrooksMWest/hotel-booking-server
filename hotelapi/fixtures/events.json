@@ -4,6 +4,8 @@
       "pk": 1,
       "fields": {
           "event_name": "Wedding Party",
+          "description": "This is easily the greatest wedding party that will ever take place at the Wild West Hotel!",
+          "image_url": "https://fetch.getnarrativeapp.com/static/04e58ff4-59f8-43a1-9918-9df76be7d173/Western-wedding-ceremony-.jpg?w=1500",
           "date": "2025-05-20T00:00:00Z",
           "time": "14:00:00"
       }
@@ -13,6 +15,8 @@
       "pk": 2,
       "fields": {
           "event_name": "Corporate Retreat",
+          "description": "Working toward big goals for the company while providing cold pizza for the development team",
+          "image_url": "https://www.jccscpa.com/wp-content/uploads/2021/06/file-2.jpg",
           "date": "2025-06-15T00:00:00Z",
           "time": "10:00:00"
       }
