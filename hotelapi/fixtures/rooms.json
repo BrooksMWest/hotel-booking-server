@@ -10,7 +10,7 @@
           "price": "39.99",
           "good_view": true,
           "smoking": false,
-          "booking": 2
+          "booking": 1
       }
   },
   {
@@ -38,7 +38,7 @@
           "price": "345.99",
           "good_view": false,
           "smoking": true,
-          "booking": 1
+          "booking": 2
       }
     
 }
