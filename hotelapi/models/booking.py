@@ -7,4 +7,4 @@ class Booking(models.Model):
     number_of_party = models.IntegerField()
     check_in_date = models.DateTimeField()
     check_out_date = models.DateTimeField()
-    event = models.ForeignKey('Event', on_delete=models.CASCADE, related_name='bookings')
+    event = models.ForeignKey('Event', on_delete=models.CASCADE)
