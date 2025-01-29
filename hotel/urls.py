@@ -28,7 +28,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers 
-from hotelapi.views import CustomerView
+from hotelapi.views import CustomerView, EventView, BookingView, CustomerBookingView, CustomerView, RoomView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'customers', CustomerView, 'customer')
@@ -39,6 +39,7 @@ router.register(r'events', EventView, 'event')
 router.register(r'rooms', RoomView, 'room')
 router.register(r'customers', CustomerView, 'customer')
 router.register(r'customer_bookings', CustomerBookingView, 'customer_booking')
+router.register(r'bookings', BookingView, 'booking')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
