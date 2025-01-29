@@ -1,18 +1,18 @@
 [
   {
-  "model": "hotelapi.customer",
-  "pk": "1",
-  "fields": {
-  "first_name": "Johnny",
-  "last_name": "Depp"
-  }
+      "model": "hotelapi.customer",
+      "pk": "1",
+      "fields": {
+          "first_name": "Johnny",
+          "last_name": "Depp"
+      }
   },
   {
-  "model": "hotelapi.customer",
-  "pk": "2",
-  "fields": {
-  "first_name": "Jennifer",
-  "last_name": "Anniston"
+      "model": "hotelapi.customer",
+      "pk": "2",
+      "fields": {
+          "first_name": "Jennifer",
+          "last_name": "Anniston"
+      }
   }
-  }
-  ]
+]
