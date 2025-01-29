@@ -3,8 +3,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from hotelapi.models import Event
-from hotelapi.models import Booking
+from hotelapi.models import Event, Booking
 
 
 
@@ -48,10 +47,11 @@ class BookingView(ViewSet):
         event = Event.objects.get(id=request.data["event"])
 
         book = Booking.objects.create(
-            sale=request.data["sale"],
+            paid=request.data["paid"],
             number_of_party=request.data["number_of_party"],
             check_in_date=request.data["check_in_date"],
             check_out_date=request.data["check_out_date"],
+            event=event
         )
         serializer = BookingSerializer(book)
         return Response(serializer.data)
