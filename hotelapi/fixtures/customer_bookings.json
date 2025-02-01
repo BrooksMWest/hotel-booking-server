@@ -1,0 +1,19 @@
+[
+    {
+        "model": "hotelapi.customerbooking",
+        "pk": 1,
+        "fields": {
+            "booking": 1,
+            "customer": 1
+        }
+    },
+    {
+        "model": "hotelapi.customerbooking",
+        "pk": 2,
+        "fields": {
+            "booking": 2,
+            "customer": 1
+        }
+    }
+  ]
+  
