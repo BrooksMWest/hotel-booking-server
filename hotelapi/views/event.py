@@ -85,10 +85,10 @@ class EventView(ViewSet):
             event.time=request.data["time"]
             event.save()
 
-            serializer = EventSerializer(event)
+            serializer = EventSerializer(event, data=request.data, partial=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
 
-        except Room.DoesNotExist:
+        except Event.DoesNotExist:
             raise Http404("Event not found")
         except KeyError as e:
             return Response({"error": f"Missing field: {str(e)}"}, status=status.HTTP_400_BAD_REQUEST)

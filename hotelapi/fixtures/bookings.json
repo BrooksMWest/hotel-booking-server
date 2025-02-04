@@ -7,7 +7,8 @@
           "number_of_party": 4,
           "check_in_date": "2025-05-19T15:00:00Z",
           "check_out_date": "2025-05-21T12:00:00Z",
-          "event": 1
+          "event": 1,
+          "uid": "lJqvVLNc2oacEFhPiByunxytpC32"
       }
   },
   {
@@ -18,7 +19,32 @@
           "number_of_party": 10,
           "check_in_date": "2025-06-14T14:00:00Z",
           "check_out_date": "2025-06-16T10:00:00Z",
-          "event": 2
+          "event": 2,
+          "uid": "iponlJqvVLNc2oacEFhPiByunxytpC32"
       }
-  }
+  },
+  {
+    "model": "hotelapi.booking",
+    "pk": 3,
+    "fields": {
+        "paid": true,
+        "number_of_party": 6,
+        "check_in_date": "2025-01-19T15:00:00Z",
+        "check_out_date": "2025-07-21T12:00:00Z",
+        "event": 1,
+        "uid": "iponjVrVrvax0XoyC4KZqVVVTND2"
+    }
+},
+{
+    "model": "hotelapi.booking",
+    "pk": 4,
+    "fields": {
+        "paid": false,
+        "number_of_party": 3,
+        "check_in_date": "2025-09-14T14:00:00Z",
+        "check_out_date": "2025-12-16T10:00:00Z",
+        "event": 2,
+        "uid": "iponjVrVrvax0XoyC4KZqVVVTND2"
+    }
+}
 ]
