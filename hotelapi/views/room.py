@@ -87,15 +87,16 @@ class RoomView(ViewSet):
         try:
             room = Room.objects.get(pk=pk)
 
-            booking_id = request.data.get("booking_id")
-            if booking_id:
-                try:
-                    booking = Booking.objects.get(pk=booking_id)
-                    room.booking = booking
-                except Booking.DoesNotExist:
-                    return Response({"error": "Invalid booking_id, booking not found."}, status=status.HTTP_400_BAD_REQUEST)
+            # booking_id = request.data.get("booking_id")
+            # if booking_id:
+            #     try:
+            #         booking = Booking.objects.get(pk=booking_id)
+            #         room.booking = booking
+            #     except Booking.DoesNotExist:
+            #         return Response({"error": "Invalid booking_id, booking not found."}, status=status.HTTP_400_BAD_REQUEST)
+            booking = Booking.objects.get(pk=request.data["booking"])
+
                 
-            room.booking = booking
             room.room_number=request.data["room_number"] 
             room.vacancy=request.data["vacancy"]
             room.room_size=request.data["room_size"]
@@ -103,7 +104,8 @@ class RoomView(ViewSet):
             room.price=request.data["price"]
             room.good_view=request.data["good_view"]
             room.smoking=request.data["smoking"]
-            room.booking=request.data["booking_id"]
+            room.booking=booking
+            room
             room.save()
 
             serializer = RoomSerializer(room)
