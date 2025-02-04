@@ -51,7 +51,8 @@ class BookingView(ViewSet):
             number_of_party=request.data["number_of_party"],
             check_in_date=request.data["check_in_date"],
             check_out_date=request.data["check_out_date"],
-            event=event
+            event=event,
+            uid=request.data["uid"]
         )
         serializer = BookingSerializer(book)
         return Response(serializer.data)
@@ -72,6 +73,7 @@ class BookingView(ViewSet):
         booking.check_in_date = request.data["check_in_date"]
         booking.check_out_date = request.data["check_out_date"]
         booking.event = event  # Update the event relationship
+        booking.uid = request.data["uid"]
         booking.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
@@ -88,4 +90,4 @@ class BookingSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Booking
-        fields = ('paid', 'number_of_party', 'check_in_date', 'check_out_date', 'event')
+        fields = ('paid', 'number_of_party', 'check_in_date', 'check_out_date', 'event', 'uid')

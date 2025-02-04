@@ -8,3 +8,4 @@ class Booking(models.Model):
     check_in_date = models.DateTimeField()
     check_out_date = models.DateTimeField()
     event = models.ForeignKey('Event', on_delete=models.CASCADE)
+    uid = models.CharField(max_length=255, null=True, blank=True)
