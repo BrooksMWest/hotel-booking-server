@@ -20,5 +20,38 @@
           "date": "2025-06-15",
           "time": "10:00:00"
       }
-  }
+  },
+  {
+    "model": "hotelapi.event",
+    "pk": 3,
+    "fields": {
+        "event_name": "Western Music Festival",
+        "description": "Get ready for a night of country tunes, line dancing, and a mechanical bull challenge!",
+        "image_url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uY2VydHxlbnwwfHwwfHx8MA%3D%3D",
+        "date": "2025-07-10",
+        "time": "18:00:00"
+    }
+},
+{
+    "model": "hotelapi.event",
+    "pk": 4,
+    "fields": {
+        "event_name": "Old West Murder Mystery Night",
+        "description": "Put on your cowboy hat and solve a thrilling Wild West whodunit at the saloon!",
+        "image_url": "https://st3.depositphotos.com/2523411/35323/i/450/depositphotos_353230118-stock-photo-young-woman-on-the-narrow.jpg",
+        "date": "2025-08-22",
+        "time": "19:30:00"
+    }
+},
+{
+    "model": "hotelapi.event",
+    "pk": 5,
+    "fields": {
+        "event_name": "Fourth of July BBQ Bash",
+        "description": "Celebrate Independence Day with a sizzling barbecue, fireworks, and live country music!",
+        "image_url": "https://media.istockphoto.com/id/1177886278/photo/barbecue-camping.jpg?s=612x612&w=0&k=20&c=XeciPnJ8B-l83kb6Sf5vzL1xPBfMHPFc9GVOydQG3e0=",
+        "date": "2025-07-04",
+        "time": "12:00:00"
+    }
+}
 ]
