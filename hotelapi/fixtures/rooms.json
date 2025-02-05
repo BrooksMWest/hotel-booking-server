@@ -41,5 +41,215 @@
           "booking": 2
       }
     
+},
+{
+    "model": "hotelapi.room",
+    "pk": 4,
+    "fields": {
+        "room_number": 4,
+        "vacancy": true,
+        "room_size": "Double King",
+        "star_rating": 4,
+        "price": "399.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 2
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 5,
+    "fields": {
+        "room_number": 5,
+        "vacancy": true,
+        "room_size": "Micro Twin",
+        "star_rating": 1,
+        "price": "39.99",
+        "good_view": false,
+        "smoking": true,
+        "booking": 3
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 6,
+    "fields": {
+        "room_number": 6,
+        "vacancy": true,
+        "room_size": "Three pull-outs",
+        "star_rating": 2,
+        "price": "99.99",
+        "good_view": false,
+        "smoking": true,
+        "booking": 1
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 7,
+    "fields": {
+        "room_number": 7,
+        "vacancy": true,
+        "room_size": "Single",
+        "star_rating": 2,
+        "price": "39.99",
+        "good_view": false,
+        "smoking": false,
+        "booking": 2
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 8,
+    "fields": {
+        "room_number": 8,
+        "vacancy": true,
+        "room_size": "Single",
+        "star_rating": 4,
+        "price": "49.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 2
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 9,
+    "fields": {
+        "room_number": 9,
+        "vacancy": true,
+        "room_size": "Single and Looking",
+        "star_rating": 4,
+        "price": "89.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 3
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 10,
+    "fields": {
+        "room_number": 10,
+        "vacancy": true,
+        "room_size": "Two Queens",
+        "star_rating": 3,
+        "price": "129.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 1
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 11,
+    "fields": {
+        "room_number": 11,
+        "vacancy": true,
+        "room_size": "Quadruple",
+        "star_rating": 4,
+        "price": "99.99",
+        "good_view": true,
+        "smoking": true,
+        "booking": 1
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 12,
+    "fields": {
+        "room_number": 12,
+        "vacancy": false,
+        "room_size": "California King",
+        "star_rating": 5,
+        "price": "139.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 2
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 13,
+    "fields": {
+        "room_number": 13,
+        "vacancy": false,
+        "room_size": "King Waterbed",
+        "star_rating": 5,
+        "price": "69.69",
+        "good_view": true,
+        "smoking": true,
+        "booking": 3
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 14,
+    "fields": {
+        "room_number": 14,
+        "vacancy": true,
+        "room_size": "4 Bunk Beds",
+        "star_rating": 4,
+        "price": "39.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 4
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 15,
+    "fields": {
+        "room_number": 15,
+        "vacancy": true,
+        "room_size": "Double",
+        "star_rating": 4,
+        "price": "49.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 1
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 16,
+    "fields": {
+        "room_number": 16,
+        "vacancy": true,
+        "room_size": "Single",
+        "star_rating": 4,
+        "price": "39.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 2
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 17,
+    "fields": {
+        "room_number": 17,
+        "vacancy": true,
+        "room_size": "Double Hammocks",
+        "star_rating": 2,
+        "price": "89.99",
+        "good_view": false,
+        "smoking": false,
+        "booking": 3
+    }
+},
+{
+    "model": "hotelapi.room",
+    "pk": 18,
+    "fields": {
+        "room_number": 18,
+        "vacancy": false,
+        "room_size": "Three Kings",
+        "star_rating": 5,
+        "price": "539.99",
+        "good_view": true,
+        "smoking": false,
+        "booking": 4
+    }
 }
 ]
