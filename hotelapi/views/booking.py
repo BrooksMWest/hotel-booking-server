@@ -44,9 +44,15 @@ class BookingView(ViewSet):
             Response -- JSON serialized game instance
         """
         # Here I am 
-        event = Event.objects.get(id=request.data["event"])
+        event_id = request.data.get("event")  # Use `.get()` to avoid KeyError
 
-        book = Booking.objects.create(
+        if not event_id or not Event.objects.filter(id=event_id).exists():
+            return Response({"error": "Invalid event ID"}, status=status.HTTP_400_BAD_REQUEST)
+
+        event = Event.objects.get(id=event_id)
+
+
+        booking = Booking.objects.create(
             paid=request.data["paid"],
             number_of_party=request.data["number_of_party"],
             check_in_date=request.data["check_in_date"],
@@ -54,7 +60,7 @@ class BookingView(ViewSet):
             event=event,
             uid=request.data["uid"]
         )
-        serializer = BookingSerializer(book)
+        serializer = BookingSerializer(booking)
         return Response(serializer.data)
     
     
