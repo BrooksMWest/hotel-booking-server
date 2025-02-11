@@ -84,17 +84,13 @@ class RoomView(ViewSet):
         try:
             room = Room.objects.get(pk=pk)
 
-            # Get only provided fields
+            # Get only provided fields in our case just vacancy and booking_id 
             vacancy = request.data.get("vacancy", room.vacancy)
             booking_id = request.data.get("booking", None)  # Handle booking separately
 
             # If booking is provided, validate it
-            if booking_id is not None:
-                try:
-                    booking = Booking.objects.get(pk=booking_id)
-                except Booking.DoesNotExist:
-                    return Response({"error": "Invalid booking ID"}, status=status.HTTP_400_BAD_REQUEST)
-                room.booking = booking
+            booking = Booking.objects.get(pk=booking_id) #this gets the exact same number but just basically make sure that booking_id exist on the booking tb
+            room.booking = booking #could add a error handling here. 
 
             # Update fields
             room.vacancy = vacancy
