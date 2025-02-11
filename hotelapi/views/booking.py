@@ -64,7 +64,7 @@ class BookingView(ViewSet):
         return Response(serializer.data)
     
     
-    def update(self, request, pk):
+    def update(self, request, pk, *args, **kwargs):
         """Handle PUT requests for a book"""
 
         # Fetch the book to be updated
