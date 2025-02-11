@@ -10,7 +10,7 @@
           "price": "39.99",
           "good_view": true,
           "smoking": false,
-          "booking": 1
+          "booking": null
       }
   },
   {
@@ -18,13 +18,13 @@
       "pk": 2,
       "fields": {
           "room_number": 2,
-          "vacancy": false,
+          "vacancy": true,
           "room_size": "Suite",
           "star_rating": 3,
           "price": "599.99",
           "good_view": true,
           "smoking": false,
-          "booking": 2
+          "booking": null
       }
   },
   {
@@ -38,7 +38,7 @@
           "price": "345.99",
           "good_view": false,
           "smoking": true,
-          "booking": 2
+          "booking": null
       }
     
 },
@@ -53,7 +53,7 @@
         "price": "399.99",
         "good_view": true,
         "smoking": false,
-        "booking": 2
+        "booking": null
     }
 },
 {
@@ -67,7 +67,7 @@
         "price": "39.99",
         "good_view": false,
         "smoking": true,
-        "booking": 3
+        "booking": null
     }
 },
 {
@@ -81,7 +81,7 @@
         "price": "99.99",
         "good_view": false,
         "smoking": true,
-        "booking": 1
+        "booking": null
     }
 },
 {
@@ -95,7 +95,7 @@
         "price": "39.99",
         "good_view": false,
         "smoking": false,
-        "booking": 2
+        "booking": null
     }
 },
 {
@@ -109,7 +109,7 @@
         "price": "49.99",
         "good_view": true,
         "smoking": false,
-        "booking": 2
+        "booking": null
     }
 },
 {
@@ -123,7 +123,7 @@
         "price": "89.99",
         "good_view": true,
         "smoking": false,
-        "booking": 3
+        "booking": null
     }
 },
 {
@@ -137,7 +137,7 @@
         "price": "129.99",
         "good_view": true,
         "smoking": false,
-        "booking": 1
+        "booking": null
     }
 },
 {
@@ -151,7 +151,7 @@
         "price": "99.99",
         "good_view": true,
         "smoking": true,
-        "booking": 1
+        "booking": null
     }
 },
 {
@@ -159,13 +159,13 @@
     "pk": 12,
     "fields": {
         "room_number": 12,
-        "vacancy": false,
+        "vacancy": true,
         "room_size": "California King",
         "star_rating": 5,
         "price": "139.99",
         "good_view": true,
         "smoking": false,
-        "booking": 2
+        "booking": null
     }
 },
 {
@@ -173,13 +173,13 @@
     "pk": 13,
     "fields": {
         "room_number": 13,
-        "vacancy": false,
+        "vacancy": true,
         "room_size": "King Waterbed",
         "star_rating": 5,
         "price": "69.69",
         "good_view": true,
         "smoking": true,
-        "booking": 3
+        "booking": null
     }
 },
 {
@@ -193,7 +193,7 @@
         "price": "39.99",
         "good_view": true,
         "smoking": false,
-        "booking": 4
+        "booking": null
     }
 },
 {
@@ -207,7 +207,7 @@
         "price": "49.99",
         "good_view": true,
         "smoking": false,
-        "booking": 1
+        "booking": null
     }
 },
 {
@@ -221,7 +221,7 @@
         "price": "39.99",
         "good_view": true,
         "smoking": false,
-        "booking": 2
+        "booking": null
     }
 },
 {
@@ -235,7 +235,7 @@
         "price": "89.99",
         "good_view": false,
         "smoking": false,
-        "booking": 3
+        "booking": null
     }
 },
 {
@@ -243,13 +243,13 @@
     "pk": 18,
     "fields": {
         "room_number": 18,
-        "vacancy": false,
+        "vacancy": true,
         "room_size": "Three Kings",
         "star_rating": 5,
         "price": "539.99",
         "good_view": true,
         "smoking": false,
-        "booking": 4
+        "booking": null
     }
 }
 ]
