@@ -10,4 +10,5 @@ class Room(models.Model):
   price = models.CharField(max_length=10)
   good_view = models.BooleanField()
   smoking = models.BooleanField()
-  booking = models.ForeignKey(Booking, on_delete=models.CASCADE, null=True, blank=True)
+  booking = models.ForeignKey(Booking, on_delete=models.SET_NULL, null=True, blank=True)
+  
