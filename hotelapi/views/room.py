@@ -78,43 +78,29 @@ class RoomView(ViewSet):
 
     
 
-    def update(self, request, pk):
-        """Handle PUT requests for a room
+    def update(self, request, pk, format=None): #I did this because we're assuming that everything else in the rooms will never change
+        """Handle PUT requests for updating room vacancy and booking only."""
 
-        Returns:
-           Response -- Empty body with 204 status code or error message
-        """
         try:
             room = Room.objects.get(pk=pk)
 
-            # booking_id = request.data.get("booking_id")
-            # if booking_id:
-            #     try:
-            #         booking = Booking.objects.get(pk=booking_id)
-            #         room.booking = booking
-            #     except Booking.DoesNotExist:
-            #         return Response({"error": "Invalid booking_id, booking not found."}, status=status.HTTP_400_BAD_REQUEST)
-            booking = Booking.objects.get(pk=request.data["booking"])
+            # Get only provided fields in our case just vacancy and booking_id 
+            vacancy = request.data.get("vacancy", room.vacancy)
+            booking_id = request.data.get("booking", None)  # Handle booking separately
 
-                
-            room.room_number=request.data["room_number"] 
-            room.vacancy=request.data["vacancy"]
-            room.room_size=request.data["room_size"]
-            room.star_rating=request.data["star_rating"]
-            room.price=request.data["price"]
-            room.good_view=request.data["good_view"]
-            room.smoking=request.data["smoking"]
-            room.booking=booking
-            room
+            # If booking is provided, validate it
+            booking = Booking.objects.get(pk=booking_id) #this gets the exact same number but just basically make sure that booking_id exist on the booking tb
+            room.booking = booking #could add a error handling here. 
+
+            # Update fields
+            room.vacancy = vacancy
             room.save()
 
             serializer = RoomSerializer(room)
             return Response(serializer.data, status=status.HTTP_200_OK)
 
         except Room.DoesNotExist:
-            raise Http404("Room not found")
-        except KeyError as e:
-            return Response({"error": f"Missing field: {str(e)}"}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Room not found"}, status=status.HTTP_404_NOT_FOUND)
         
     def destroy(self, request, pk):
         try:
