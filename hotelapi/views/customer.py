@@ -28,7 +28,7 @@ class CustomerView(ViewSet):
     serializer = CustomerSerializer(customers, many=True)
     return Response(serializer.data)
   #POST REQUESTS
-  def create(self, request):
+  def create(self, request, *args, **kwargs):
     #VALUES FROM CLIENT/FIXTURES
     customer = Customer.objects.create(
       first_name=request.data["first_name"],
