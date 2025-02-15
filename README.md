@@ -20,9 +20,10 @@ https://dbdiagram.io/d/678bdd886b7fa355c34c6c15
 ![alt text](<Screenshot 2025-01-27 194859.png>)
 
 ### Loom Video Walk Through
+https://www.loom.com/share/20deb47a7e664325ae0555cdcd712f0d?sid=a1e05f4b-ce86-4c43-9df0-0d61e7eeb9cf
 
 ### Deployed
-
+https://hotel-booking-client-delta.vercel.app/
 
 ### Screenshots
 ![alt text](image.png)
